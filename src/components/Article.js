@@ -1,18 +1,13 @@
-import React from "react";
+import React from 'react';
 
-function Article(
-    article, 
-    date = 'January 1, 1970',
-    preview
-) {
+function Article({ title, date = "January 1, 1970", preview }) {
     return (
-
         <React.Fragment>
-            <h3>{article}</h3>
+            <h3>{title}</h3>
             <small>{date}</small>
             <p>{preview}</p>
         </React.Fragment>
-        
     )
 }
-export default Article
+
+export default Article;
