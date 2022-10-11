@@ -1,16 +1,12 @@
-import React from "react";
+import React from 'react';
 
-function About({
-    image = 'https://via.placeholder.com/215',
-    alternate = 'blog logo',
-    aboutText
-}) {
+function About({ image = "https://via.placeholder.com/215", about }) {
     return (
-        <React.Fragment>
-            <img src={image} alt={alternate}/>
-            <p>{aboutText}</p>
-        </React.Fragment>
-
+        <aside>
+            <img src={image} alt="blog logo" />
+            <p>{about}</p>
+        </aside>
     )
 }
-export default About
+
+export default About;
